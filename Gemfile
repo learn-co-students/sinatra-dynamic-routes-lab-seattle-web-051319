@@ -8,6 +8,7 @@ gem 'require_all'
 
 group :test, :development do
   gem 'rspec'
+  gem 'byebug'
   gem 'capybara'
   gem 'rack-test'
   gem 'pry'
