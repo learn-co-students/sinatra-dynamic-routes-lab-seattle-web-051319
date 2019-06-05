@@ -29,14 +29,14 @@ class App < Sinatra::Base
 
     answer = 'Unable to perform this operation'
 
-    if params[:operation]
-    else 'add'
+    case params[:operation]
+    when 'add'
       answer = (number1 + number2).to_s
-    else 'subtract'
+    when 'subtract'
       answer = (number1 - number2).to_s
-    else 'multiply'
+    when 'multiply'
       answer = (number1 * number2).to_s
-    else 'divide'
+    when 'divide'
       answer = (number1 / number2).to_s
     end
   end
